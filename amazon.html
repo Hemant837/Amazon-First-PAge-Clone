@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="amazon.css">
+    <title>Amazon Clone</title>
+</head>
+
+<body>
+
+    <!-- nav-1 -->
+
+    <nav id="nav-1" class="navbar navbar-dark sticky-top">
+        <div id="nav-left">
+            <img id="amazon-img" src="logo.png" alt="Amazon.in">
+            <a id="global-add" class="row">
+                <span id="hello">Hello</span>
+                <span class="col">
+                    <svg id="location" xmlns="http://www.w3.org/2000/svg" fill="#ccc" class="bi bi-geo-alt"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <span id="address" class="col">Select your address</span>
+                </span>
+            </a>
+        </div>
+        <div id="categories" class="input-group mb-3">
+            <button id="categories-btn" class="btn btn-outline-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">All</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                </select>
+            </ul>
+            <input type="search" class="form-control" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="#00000" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></button>
+        </div>
+        <div id="language-selector" class="input-group">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-flag" viewBox="0 0 16 16">
+                    <path
+                        d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z" />
+                </svg></button>
+            <ul class="dropdown-menu">
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        English - EN
+                    </label>
+                </li>
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        हिंदी - HI
+                    </label>
+                </li>
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        தமிழ் - TA
+                    </label>
+                </li>
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        മലയാളം - ML
+                    </label>>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Change Country/region</a></li>
+            </ul>
+        </div>
+        <a id="account" class="row">
+            <span id="hello-2">Hello, Sign in</span>
+            <span id="list">Account & Lists</span>
+        </a>
+        <a id="return" class="row">
+            <span id="hello-2">Returns</span>
+            <span id="list">& Orders</span>
+        </a>
+        <div id="shopping">
+            <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-cart2" viewBox="0 0 16 16">
+                <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg>
+            <span id="cart">Cart</span>
+        </div>
+    </nav>
+
+    <!-- nav-2 -->
+
+    <nav id="nav-2" class="navbar navbar-light">
+        <div id="burger-all">
+            <button id="all" type="button" class="btn"><svg id="burger-icon" xmlns="http://www.w3.org/2000/svg"
+                    fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>All</button>
+        </div>
+        <div id="anchors">
+            <a id="anchors-link" href="##">Amazon Pay</a>
+            <a id="anchors-link" href="##">Best Sellers</a>
+            <a id="anchors-link" href="##">Mobiles</a>
+            <a id="anchors-link" href="##">Fasion</a>
+            <a id="anchors-link" href="##">Electronics</a>
+            <a id="anchors-link" href="##">New Releases</a>
+            <a id="anchors-link" href="##">Prime</a>
+            <a id="anchors-link" href="##">Customer Service</a>
+            <a id="anchors-link" href="##">Computers</a>
+            <a id="anchors-link" href="##">Home & Kitchen</a>
+            <a id="anchors-link" href="##">Toy & Games</a>
+        </div>
+        <img id="shopping-made-easys" src="shopping_made_easy.jpg" alt="shopping-made-easy">
+    </nav>
+
+    <!-- Carousel - 1 -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img id="carousel-img" src="1.jpg" class="d-block" alt="1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img id="carousel-img" src="2.jpg" class="d-block" alt="2">
+            </div>
+            <div class="carousel-item">
+                <img id="carousel-img" src="3.jpg" class="d-block" alt="3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Card categories - 1 -->
+
+    <div id="all-card">
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Revamp your home in style</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="revamp/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Bedsheets, curtains & more</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="revamp/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Home decoration</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="revamp/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Home storage</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="revamp/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Lighting solutions</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Upgrade your home | Amazon Brands & more</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="upgrade/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Smart LED TVs</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="upgrade/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Appliances</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="upgrade/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Furniture</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="upgrade/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Kitchen products</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">Shop now</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Top rated, premium quality | Amazon Brands & more</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="top_rated/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Home products</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="top_rated/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Furniture</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="top_rated/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Daily essentials</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="top_rated/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Clothing essesntial</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="securely-btn" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Sign in for your best experience</h5>
+                <a id="btn" href="#" class="btn btn-warning">Sign in securely</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card categories - 2 -->
+
+    <div id="all-card-2">
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Top picks for your home</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="top_picks/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">ACs</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="top_picks/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Refrigeratros</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="top_picks/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Microwaves</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="top_picks/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Washing machines</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Kids gift ideas | Toys, games & books</h5>
+                <div id="first-card-content">
+                    <img id="kids-img" src="kids-1.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Automotive essentials | Up to 60% off</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="automotive/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Cleaning accessories</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="automotive/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Tyre & rim care</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="automotive/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Helmets</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="automotive/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Vacuum cleaner</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Pay your credit card bills on Amazon</h5>
+                <div id="first-card-content">
+                    <img id="kids-img" src="pay_your_credit.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">Pay now</a>
+        </div>
+    </div>
+
+    <!-- Carousel - 2 -->
+
+    <div id="carousel-lite" class="card-group row row-cols-1 row-cols-md-6">
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-1"></div>
+                <div class="card-body">
+                    <p class="card-text">₹23999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-2"></div>
+                <div class="card-body">
+                    <p class="card-text">₹179.00 - ₹1,499.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-3"></div>
+                <div class="card-body">
+                    <p class="card-text">₹749.00 - ₹999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-4"></div>
+                <div class="card-body">
+                    <p class="card-text">₹99.00 - ₹2,909.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-5"></div>
+                <div class="card-body">
+                    <p class="card-text">₹600.00 - ₹14,695.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-6"></div>
+                <div class="card-body">
+                    <p class="card-text">₹259.00 - ₹2,159.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel - 3 -->
+
+    <div id="carousel-lite" class="card-group row row-cols-1 row-cols-md-6">
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="up-to-1"></div>
+                <div class="card-body">
+                    <p class="card-text">₹23999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="up-to-2"></div>
+                <div class="card-body">
+                    <p class="card-text">₹179.00 - ₹1,499.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="up-to-3"></div>
+                <div class="card-body">
+                    <p class="card-text">₹749.00 - ₹999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="up-to-4"></div>
+                <div class="card-body">
+                    <p class="card-text">₹99.00 - ₹2,909.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="up-to-5"></div>
+                <div class="card-body">
+                    <p class="card-text">₹600.00 - ₹14,695.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="up-to-6"></div>
+                <div class="card-body">
+                    <p class="card-text">₹259.00 - ₹2,159.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card categories - 3 -->
+
+    <div id="all-card-2">
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Just launched | ViewSonic portable touch monitor</h5>
+                <div id="first-card-content">
+                    <img id="kids-img" src="just_launched.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Effective dishwashing for Indian cooking</h5>
+                <div id="first-card-content">
+                    <img id="kids-img" src="effective.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Pick from these types of masks</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="pick/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">N95 Masks & respirators</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="pick/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Cloth masks</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="pick/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Kids mask</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="pick/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">View the mask store</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">View all</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">At home Groomong & Wellness devices</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="at_home/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Men's Grooming</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="at_home/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Women's Grooming</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="at_home/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Healthcare Devices</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="at_home/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Massagers</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">View all</a>
+        </div>
+    </div>
+
+    <!-- Carousel - 4 -->
+
+    <div id="carousel-lite" class="card-group row row-cols-1 row-cols-md-6">
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-1"></div>
+                <div class="card-body">
+                    <p class="card-text">₹23999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-2"></div>
+                <div class="card-body">
+                    <p class="card-text">₹179.00 - ₹1,499.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-3"></div>
+                <div class="card-body">
+                    <p class="card-text">₹749.00 - ₹999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-4"></div>
+                <div class="card-body">
+                    <p class="card-text">₹99.00 - ₹2,909.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-5"></div>
+                <div class="card-body">
+                    <p class="card-text">₹600.00 - ₹14,695.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-6"></div>
+                <div class="card-body">
+                    <p class="card-text">₹259.00 - ₹2,159.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card categories - 4 -->
+
+    <div id="all-card-2">
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Masks and faceshields</h5>
+                <div id="first-card-content">
+                    <img id="masks-img" src="masks.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Fashion clearance store | 50% - 70% off</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="fashion/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Clothing</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="fashion/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Footwear</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="fashion/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Jewellery, watches & more</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="fashion/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">View the store</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">View all</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Cookware & dining</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="cookware/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Gas stoves</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="cookware/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Cookware</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="cookware/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Kitchen storage</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="cookware/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Tableware</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">For all your photography needs</h5>
+                <div id="first-card-content">
+                    <img id="kids-img" src="for_all.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+    </div>
+
+    <!-- Carousel - 4 -->
+
+    <div id="carousel-lite" class="card-group row row-cols-1 row-cols-md-6">
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-1"></div>
+                <div class="card-body">
+                    <p class="card-text">₹23999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-2"></div>
+                <div class="card-body">
+                    <p class="card-text">₹179.00 - ₹1,499.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-3"></div>
+                <div class="card-body">
+                    <p class="card-text">₹749.00 - ₹999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-4"></div>
+                <div class="card-body">
+                    <p class="card-text">₹99.00 - ₹2,909.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-5"></div>
+                <div class="card-body">
+                    <p class="card-text">₹600.00 - ₹14,695.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-6"></div>
+                <div class="card-body">
+                    <p class="card-text">₹259.00 - ₹2,159.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel - 5 -->
+
+    <div id="carousel-lite" class="card-group row row-cols-1 row-cols-md-6">
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-1"></div>
+                <div class="card-body">
+                    <p class="card-text">₹23999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-2"></div>
+                <div class="card-body">
+                    <p class="card-text">₹179.00 - ₹1,499.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-3"></div>
+                <div class="card-body">
+                    <p class="card-text">₹749.00 - ₹999.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-4"></div>
+                <div class="card-body">
+                    <p class="card-text">₹99.00 - ₹2,909.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-5"></div>
+                <div class="card-body">
+                    <p class="card-text">₹600.00 - ₹14,695.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="carousel-lite-cards" class="card h-80">
+                <div id="top-deals-6"></div>
+                <div class="card-body">
+                    <p class="card-text">₹259.00 - ₹2,159.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ends in 12:48:09</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card categories - 5 -->
+
+    <div id="all-card-2">
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">For all our monsoon essentials</h5>
+                <div id="first-card-content">
+                    <img id="monsoon-img" src="for_monsoon.jpg" alt="tr-1">
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Popular categories in fashion</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="popular/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Men's Innerwear</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="popular/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Women's sarees</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="popular/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Men's footwear</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="popular/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Watches</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">End of Season Sale</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Beauty products</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="beauty_products/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Skin care</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="beauty_products/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Hair care</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="beauty_products/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Makeup</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="beauty_products/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Luxury beauty</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">See more</a>
+        </div>
+        <div id="first-card" class="card">
+            <div class="card-body">
+                <h5 id="fc-h">Styles for Men | Up to 70% off</h5>
+                <div id="first-card-content">
+                    <div id="hp">
+                        <img id="card-img" src="styles/1.jpg" alt="tr-1">
+                        <p id="card-txt" class="card-text">Clothing</p>
+                    </div>
+                    <div id="f">
+                        <img id="card-img" src="styles/2.jpg" alt="tr-2">
+                        <p id="card-txt" class="card-text">Footwear</p>
+                    </div>
+                </div>
+                <div id="first-card-content">
+                    <div id="de">
+                        <img id="card-img" src="styles/3.jpg" alt="tr-3">
+                        <p id="card-txt" class="card-text">Watches</p>
+                    </div>
+                    <div id="ce">
+                        <img id="card-img" src="styles/4.jpg" alt="tr-4">
+                        <p id="card-txt" class="card-text">Bags & luggage</p>
+                    </div>
+                </div>
+            </div>
+            <a id="first-card-link" href="#nowhere" class="card-link">End of Season sale</a>
+        </div>
+    </div>
+
+    <!-- frame -->
+    <div id="frame-content" class="card">
+        <div id="frame-objects" class="card-body text-center">
+            <hr id="frame-hr-1">
+            <p id="frame-text-1">See personalized recommendations</p>
+            <button id="frame-btn" type="button" class="btn btn-warning">Sign in</button>
+            <p id="frame-text-2">New customer? <a href="#">Start here</a></p>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Span -->
+    <div id="frame-span" class="card text-center">Back to top</div>
+
+    <!-- Footers -->
+
+    <!-- Footer - 1 -->
+
+    <footer id="footer-1">
+        <div id="list-1">
+            <li id="list-h">Get to Know Us</li>
+            <li id="sublist"><a id="sublist-content" href="#">About Us</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Careers</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Press Releases</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Amazon Cares</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Gift a smile</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">Connect with Us</li>
+            <li id="sublist"><a id="sublist-content" href="#">Facebook</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Twitter</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Instagram</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">Make Money with Us</li>
+            <li id="sublist"><a id="sublist-content" href="#">Sell on Amazon</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Sell under Amazon Accelerator</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Amazon Global Selling</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Become an Affiliate</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Fulfillment by Amazon</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Amazon Your Products</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Amazon Pay on Merchants</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">Let Us Help You</li>
+            <li id="sublist"><a id="sublist-content" href="#">Covid-19 and Amazon</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Your Account</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Return Centre</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">100% Purchase</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Amazon App Download</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Amazon Assistant Download</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Help</a></li>
+        </div>
+    </footer>
+
+    <!-- Footer - 2 -->
+
+    <footer id="footer-2">
+        <div id="footer-2-content">
+            <img id="footer-logo" src="footer-logo.jfif" alt="Amazon.in">
+            <button id="footer-2-btn" class="btn btn-outline-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown">English</button>
+            <ul class="dropdown-menu">
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        English - EN
+                    </label>
+                </li>
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        हिंदी - HI
+                    </label>
+                </li>
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        தமிழ் - TA
+                    </label>
+                </li>
+                <li><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        മലയാളം - ML
+                    </label>>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Change Country/region</a></li>
+            </ul>
+    </footer>
+
+    <!-- Footer - 3 -->
+
+    <footer id="footer-3">
+        <div id="list-2">
+            <li id="sublist"><a id="sublist-content" href="#">Australia</a></li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Brazil</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Canada</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>China</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>France</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Germany</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Italy</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Japan</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Mexico</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Netherlands</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Poland</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Singapore</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Spain</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>Turkey</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>United Arab Emirates</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>United Kingdom</li>
+            <li id="sublist"><a id="sublist-content" href="#"></a>United States</li>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Footer - 4 -->
+
+    <footer id="footer-4">
+        <div id="list-1">
+            <li id="list-h">AbeBooks</li>
+            <li id="sublist"><a id="sublist-content" href="#">Books, art</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">& collectibles</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">Amazon Web Servies</li>
+            <li id="sublist"><a id="sublist-content" href="#">Scalable Cloud</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Computing Services</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">Audible</li>
+            <li id="sublist"><a id="sublist-content" href="#">Download</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Audio Books</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">DpReview</li>
+            <li id="sublist"><a id="sublist-content" href="#">Digital</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Photography</a></li>
+        </div>
+        <div id="list-1">
+            <li id="list-h">IMDb</li>
+            <li id="sublist"><a id="sublist-content" href="#">Movies TV</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">& Celebrities</a></li>
+        </div>
+    </footer>
+
+    <!-- Footer - 5 -->
+
+    <footer id="footer-5">
+        <div id="footer-5-list-1">
+            <li id="list-h">Shopbop</li>
+            <li id="sublist"><a id="sublist-content" href="#">Designer</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Fasion Brands</a></li>
+        </div>
+        <div id="footer-5-list-2">
+            <li id="list-h">Amazon Business</li>
+            <li id="sublist"><a id="sublist-content" href="#">Everything For</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Your Business</a></li>
+        </div>
+        <div id="footer-5-list-3">
+            <li id="list-h">Prime Now</li>
+            <li id="sublist"><a id="sublist-content" href="#">2-Hour Delivery</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">On Everyday Items</a></li>
+        </div>
+        <div id="footer-5-list-4">
+            <li id="list-h">Amazon Prime Music</li>
+            <li id="sublist"><a id="sublist-content" href="#">70 million songs, ad-free</a></li>
+            <li id="sublist"><a id="sublist-content" href="#">Over 9 million podcast episodes</a></li>
+        </div>
+    </footer>
+
+    <!-- Footer - 6 -->
+
+    <footer id="footer-6">
+        <div id="footer-6-content">
+            <a href="#">Conditions of Use & Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads</a>
+            <p>© 1996-2021, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

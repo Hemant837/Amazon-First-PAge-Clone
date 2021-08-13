@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddddd;
+}
+
+#top-deals-1, #top-deals-2, #top-deals-3, #top-deals-4, #top-deals-5, #top-deals-6 {
+    align-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+}
+
+#top-deals-1 {
+    background-image: url("top_deals/1.jpg");
+}
+
+#top-deals-2 {
+    background-image: url("top_deals/2.jpg");
+}
+
+#top-deals-3 {
+    background-image: url("top_deals/3.jpg");
+}
+
+#top-deals-4 {
+    background-image: url("top_deals/4.jpg");
+}
+
+#top-deals-5 {
+    background-image: url("top_deals/5.jpg");
+}
+
+#top-deals-6 {
+    background-image: url("top_deals/6.jpg");
+}
